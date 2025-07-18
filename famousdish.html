@@ -9,8 +9,9 @@
     <style>
         .food-items{
             display: grid;
-            grid-template-rows: repeat(1,1fr) ;
-            gap: 20px;
+            grid-template-columns: repeat(1,1fr) ;
+            gap: 30px;
+            padding: 30px;
            
             /* display: flex;
             flex-direction: column;
@@ -20,6 +21,31 @@
            
         } 
         .food-item{
+            border: 5px solid lightgray;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        .parag{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 400px;
+            height: 250px;
+            border-radius: 20px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size:16px;
+        }
+        .about::first-letter{
+            font-size: 25px;
+        }
+        /* .food-item{
             border: 4px solid lightslategray;
              border-radius: 20px;
             
@@ -35,15 +61,25 @@
             
             margin-left: 20px;
             margin-bottom:20px ;
-        }
+        } */
         div button{
-            border: 3px solid lightcoral;
+            border: 3px solid linen;
             box-shadow: 5px 5px 10px;
             background-color: lightgoldenrodyellow;
+            font-weight: bold;
+            border-radius: 5px;
         }
         div button:hover{
-            background-color: crimson;
+            background-color:bisque;
             cursor: pointer;
+        }
+        @media screen and (max-width:600px) {
+            .food-items{
+                display:grid;
+                grid-template-columns: repeat(1,1fr);
+
+            }
+            
         }
        
      
@@ -54,48 +90,58 @@
         <div class="food-items">
             <div class="food-item">
                 <img src="images/Hilsa Bhapa (Bangladesh).jpg" alt="">
-                <div class="para">
-                    <h3>Hilsa Bhapa (Bangladesh)</h3>
-                <p>Hilsa fish steamed in mustard paste — rich, oily, and considered the heart of Bangladeshi cuisine.</p>
-                <p>Price- About $8 to $20 per serving depending on season and quality of Hilsa fish.</p>
+                <div class="parag">
+                    <div class="para">
+                        <h3>Hilsa Bhapa (Bangladesh)</h3>
+                <p class="about">Hilsa fish steamed in mustard paste — rich, oily, and considered the heart of Bangladeshi cuisine.</p>
+                <p><b>Price-</b> About $8 to $20 per serving depending on season and quality of Hilsa fish.</p>
                 <button>Buy Now</button>
+                    </div>
                 </div>
             </div>
             <div class="food-item">
                 <img src="images/Rendang (Indonesia).webp" alt="">
-                <div class="para">
+                <div class="parag">
+                    <div class="para">
                     <h3>Rendang (Indonesia)</h3>
-                <p>Slow-cooked beef in a rich coconut and spice blend — deeply flavorful and legendary across Southeast Asia.</p>
-                <p>Price- Around $5 to $15 per serving in restaurants.</p>
+                <p class="about">Slow-cooked beef in a rich coconut and spice blend — deeply flavorful and legendary across Southeast Asia.</p>
+                <p><b>Price-</b> Around $5 to $15 per serving in restaurants.</p>
                 <button>Buy Now</button>
+                </div>
                 </div>
             </div>
             <div class="food-item">
                 <img src="images/Nasi Lemak (Malaysia).jpg" alt="">
-                <div class="para">
+                <div class="parag">
+                    <div class="para">
                     <h3> Nasi Lemak (Malaysia)</h3>
-                <p>Fragrant coconut rice with spicy sambal, crispy anchovies, peanuts, and boiled egg — Malaysia’s ultimate comfort food.</p>
-                <p>Price- Typically $2 to $6 per plate at local stalls or casual eateries.</p>
+                <p class="about">Fragrant coconut rice with spicy sambal, crispy anchovies, peanuts, and boiled egg — Malaysia’s ultimate comfort food.</p>
+                <p><b>Price-</b> Typically $2 to $6 per plate at local stalls or casual eateries.</p>
                 <button>Buy Now</button>
+                </div>
                 </div>
             </div>
             <div class="food-item">
                 <img src="images/Bibimbap (South Korea).jpg" alt="">
-                <div class="para">
+                <div class="parag">
+                    <div class="para">
                     <h3>Bibimbap (South Korea)</h3>
-                <p>A colorful bowl of rice topped with veggies, beef, fried egg, and spicy sauce — packed with flavor and texture.</p>
-                <p>Price- Typically $2 to $6 per plate at local stalls or casual eateries.</p>
+                <p class="about">A colorful bowl of rice topped with veggies, beef, fried egg, and spicy sauce — packed with flavor and texture.</p>
+                <p><b>Price-</b> Typically $2 to $6 per plate at local stalls or casual eateries.</p>
                 <button>Buy Now</button>
+                </div>
                 </div>
             </div>
             <div class="food-item">
                 <img src="images/shushi.jpg" alt="">
-               <div class="para">
+               <div class="parag">
+                <div class="para">
                      <h3>Sushi (Japan)</h3>
-                <p>Classic vinegared rice with fresh fish or seafood — clean, elegant, and world-famous.</p>
-                <p>Price- Around $10 to $30 per serving at a decent restaurant.</p>
+                <p class="about">Classic vinegared rice with fresh fish or seafood — clean, elegant, and world-famous.</p>
+                <p><b>Price-</b> Around $10 to $30 per serving at a decent restaurant.</p>
                 <button>Buy Now</button>
                 </div>
+               </div>
             </div>
         </div>
     </section>
