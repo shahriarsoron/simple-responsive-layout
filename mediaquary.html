@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .food{
+            border: 5px solid lightcoral;
+            /* gap: 15px; */
+             padding: 20px;
+             border-radius: 20px;
+        }
+        .food img{
+            width: 100%;
+        }
+        /* smmaller device */
+        @media screen and (max-width:600px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                
+            }
+            .food{
+                border-radius: 50px;
+                cursor: alias;
+                color: brown;
+                border: 5px solid antiquewhite;
+
+            }
+        }
+        /* Medium device */
+        @media screen and (min-width:600px) and (max-width:1000px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.food*12>img[src="images/Clancy-group-food.jpg"]+h3{Food Item-$}+p{Price: \$$00}+p>lorem20^btn{Buy Now} -->
+     <div class="container">
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione consequatur sint, optio fugiat exercitationem labore perferendis commodi vel cupiditate impedit!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-2</h3>
+            <p>Price: $200</p>
+            <p>Accusamus optio doloribus possimus ipsam eveniet aliquid, ipsa facilis molestias earum quis similique ex labore at neque doloremque pariatur! Laboriosam.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-3</h3>
+            <p>Price: $300</p>
+            <p>Asperiores, iure amet exercitationem voluptate maxime similique, nam quo in dicta ipsum iusto expedita! Voluptas voluptatum at quas ipsam ducimus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-4</h3>
+            <p>Price: $400</p>
+            <p>Animi voluptate officia ratione eveniet eum id earum similique? Distinctio mollitia, ducimus reiciendis consequuntur repellat quam neque nihil accusamus atque!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-5</h3>
+            <p>Price: $500</p>
+            <p>Cumque saepe ab quasi recusandae maxime dicta ex! Doloribus laboriosam voluptates repellat possimus accusamus corporis est optio aliquid sequi dolorem?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-6</h3>
+            <p>Price: $600</p>
+            <p>Earum vero voluptatem culpa debitis mollitia illo neque possimus unde iure. Fugit nobis id perspiciatis incidunt? Quia architecto incidunt non?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-7</h3>
+            <p>Price: $700</p>
+            <p>Vel aliquid esse quis delectus voluptas commodi facere, soluta recusandae nihil dolor alias ipsa officiis quam numquam, asperiores quae mollitia?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-8</h3>
+            <p>Price: $800</p>
+            <p>Quam asperiores fugiat temporibus vel distinctio facere. Nesciunt provident voluptates distinctio explicabo quasi. Natus quod veritatis porro aliquid saepe optio.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-9</h3>
+            <p>Price: $900</p>
+            <p>Nostrum quidem optio at blanditiis architecto modi delectus sapiente harum? Accusamus, sunt quisquam? Ab eos autem, nostrum accusamus odit excepturi!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-10</h3>
+            <p>Price: $1000</p>
+            <p>Numquam nemo maiores molestiae! Consequuntur quod accusamus itaque quas atque cum aut laboriosam, impedit exercitationem harum voluptatibus incidunt, omnis odit?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-11</h3>
+            <p>Price: $1100</p>
+            <p>Quas facilis quibusdam magnam fuga molestiae sapiente eius quia eligendi molestias dolor dolore, expedita repellat modi blanditiis distinctio cumque. Repellat.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/Clancy-group-food.jpg" alt="">
+            <h3>Food Item-12</h3>
+            <p>Price: $1200</p>
+            <p>Tempore repellat suscipit velit qui quae facere modi ducimus est, error incidunt illo itaque enim possimus, reprehenderit odit, natus saepe!</p>
+            <button>Buy Now</button>
+        </div>
+     </div>
+</body>
+</html>
